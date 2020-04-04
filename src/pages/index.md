@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Daylemount
+title: Urban Geography Arts
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Exploring the public realm using creative urban medium arts 
+subheading: Lorem ipsum blah etc
 mainpitch:
   title: Why Kaldi
   description: >

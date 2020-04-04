@@ -1,9 +1,9 @@
 ---
 templateKey: 'project-page'
 path: /projects
-title: Our Coffee
+title: Our Projects
 image: /img/jumbotron.jpg
-heading: Great coffee with a conscience
+heading: Explore our work in this section..
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
