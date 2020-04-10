@@ -7,7 +7,7 @@ import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const ProjectPageTemplate = ({
+export const ProjectsPageTemplate = ({
   image,
   title,
   heading,
@@ -104,7 +104,7 @@ export const ProjectPageTemplate = ({
     </div>
   )
 
-ProjectPageTemplate.propTypes = {
+ProjectsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -128,12 +128,12 @@ ProjectPageTemplate.propTypes = {
   }),
 }
 
-const ProjectPage = ({ data }) => {
+const ProjectsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <ProjectPageTemplate
+      <ProjectsPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -148,7 +148,7 @@ const ProjectPage = ({ data }) => {
   )
 }
 
-ProjectPage.propTypes = {
+ProjectsPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -156,10 +156,10 @@ ProjectPage.propTypes = {
   }),
 }
 
-export default ProjectPage
+export default ProjectsPage
 
-export const projectPageQuery = graphql`
-  query ProjectPage($id: String!) {
+export const ProjectsPageQuery = graphql`
+  query ProjectsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
