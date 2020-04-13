@@ -15,13 +15,11 @@ Running CMS locally
 And use `local_backend: true` in config.yml 
 
 ```
-$ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
-$ cd [REPO_NAME]
 $ yarn
 $ netlify dev # or ntl dev
 ```
 
-This uses the new [Netlify Dev](https://www.netlify.com/products/dev/?utm_source=blog&utm_medium=netlifycms&utm_campaign=devex) CLI feature to serve any functions you have in the `lambda` folder.
+This uses the new [Netlify Dev](https://www.netlify.com/products/dev/) CLI feature to serve any functions you have in the `lambda` folder.
 
 To test the CMS locally, you'll need to run a production build of the site:
 

@@ -63,7 +63,6 @@ export default () => (
         query={graphql`
       query ProjectPreviewsQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "single-project-page" } } }
         ) {
           edges {
