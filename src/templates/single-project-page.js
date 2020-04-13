@@ -14,8 +14,9 @@ export const SingleProjectPageTemplate = ({
   content,
   gallery,
 }) => {
-  const fullSize = gallery.map((i) => i.node.full.fluid.src)
-  const thumbs = gallery.map((i) => i.node.thumb.fluid)
+  console.log(gallery)
+  // const fullSize = gallery.map((i) => i.node.full.fluid.src)
+  // const thumbs = gallery.map((i) => i.node.thumb.fluid)
   return (
     <div className="content">
       <div
@@ -59,7 +60,8 @@ export const SingleProjectPageTemplate = ({
       </section>
       <section className="section section--gradient">
         <div className="container">
-          <Gallery images={fullSize} thumbs={thumbs} />
+          {/* <Gallery /> */}
+          {/* <Gallery images={fullSize} thumbs={thumbs} /> */}
         </div>
       </section>
     </div>
@@ -117,6 +119,15 @@ export const SingleProjectPageQuery = graphql`
         }
         heading
         description
+        gallery {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
     }
   }

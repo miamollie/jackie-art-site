@@ -5,15 +5,9 @@ description: >-
   Here is a one liner describing the Daylemount project
 mainImage: /img/test.jpg
 gallery: 
-  - image:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  - image:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  - image:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+  image1: /img/products-grid1.jpg
+  image2: /img/products-grid1.jpg
+  image3: /img/products-grid1.jpg
 ---
 
 We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
