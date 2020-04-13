@@ -1,6 +1,6 @@
 ---
 templateKey: 'single-project-page'
-title: 'Daylemount Project'
+title: 'Daylemount'
 description: >-
   Here is a one liner describing the Daylemount project
 mainImage: /img/test.jpg
