@@ -3,15 +3,20 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
-
+import Gallery from '@browniebroke/gatsby-image-gallery'
+import '@browniebroke/gatsby-image-gallery/dist/style.css'
 
 export const SingleProjectPageTemplate = ({
   mainImage,
   title,
   heading,
   description,
-  content
-}) => (
+  content,
+  gallery,
+}) => {
+  const fullSize = gallery.map((i) => i.node.full.fluid.src)
+  const thumbs = gallery.map((i) => i.node.thumb.fluid)
+  return (
     <div className="content">
       <div
         className="full-width-image-container margin-top-0"
@@ -45,9 +50,21 @@ export const SingleProjectPageTemplate = ({
           </div>
         </div>
       </section>
-      <HTMLContent content={content} />
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <HTMLContent content={content} />
+          </div>
+        </div>
+      </section>
+      <section className="section section--gradient">
+        <div className="container">
+          <Gallery images={fullSize} thumbs={thumbs} />
+        </div>
+      </section>
     </div>
   )
+}
 
 SingleProjectPageTemplate.propTypes = {
   mainImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -55,31 +72,21 @@ SingleProjectPageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   content: PropTypes.node.isRequired,
-  // main: PropTypes.shape({
-  //   heading: PropTypes.string,
-  //   description: PropTypes.string,
-  //   image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  //   image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  //   image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  // }),
-  // fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  gallery: PropTypes.array,
 }
 
 const SingleProjectPage = ({ data }) => {
-  console.log(data)
   const { markdownRemark: post } = data
-  const { frontmatter } = post
+  const { mainImage, title, heading, description, gallery } = post.frontmatter
   return (
     <Layout>
       <SingleProjectPageTemplate
-        mainImage={frontmatter.mainImage}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        mainImage={mainImage}
+        title={title}
+        heading={heading}
+        description={description}
         content={post.html}
-      // main={frontmatter.main}
-      // fullImage={frontmatter.full_image}
+        gallery={gallery}
       />
     </Layout>
   )
