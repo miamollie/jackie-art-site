@@ -3,8 +3,10 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
-import Gallery from '@browniebroke/gatsby-image-gallery'
-import '@browniebroke/gatsby-image-gallery/dist/style.css'
+import Img from "gatsby-image"
+
+// import Gallery from '@browniebroke/gatsby-image-gallery'
+// import '@browniebroke/gatsby-image-gallery/dist/style.css'
 
 export const SingleProjectPageTemplate = ({
   mainImage,
@@ -15,7 +17,11 @@ export const SingleProjectPageTemplate = ({
   gallery,
 }) => {
   console.log(gallery)
-  // const fullSize = gallery.map((i) => i.node.full.fluid.src)
+  // todo
+  const images = gallery.map((i) => {
+    console.log(i.image.childImageSharp.fluid.src)
+    return i.image.childImageSharp.fluid.src
+  })
   // const thumbs = gallery.map((i) => i.node.thumb.fluid)
   return (
     <div className="content">
@@ -60,8 +66,9 @@ export const SingleProjectPageTemplate = ({
       </section>
       <section className="section section--gradient">
         <div className="container">
-          {/* <Gallery /> */}
-          {/* <Gallery images={fullSize} thumbs={thumbs} /> */}
+          {console.log(images)}
+          {images.map((img, i) => <img src={img} key={i} />)}
+          {/* <Gallery images={images} thumbs={images} /> */}
         </div>
       </section>
     </div>
@@ -121,7 +128,7 @@ export const SingleProjectPageQuery = graphql`
         description
         gallery {
           image {
-            childImageSharp {
+             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid
               }

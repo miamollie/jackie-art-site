@@ -5,9 +5,12 @@ description: >-
   Here is a one liner describing the Daylemount project
 mainImage: /img/test.jpg
 gallery: 
-  image1: /img/products-grid1.jpg
-  image2: /img/products-grid1.jpg
-  image3: /img/products-grid1.jpg
+  - image: /img/products-grid1.jpg
+    alt: Image alt text 
+  - image: /img/products-grid1.jpg
+    alt: Image alt text 
+  - image: /img/products-grid1.jpg
+    alt: Image alt text 
 ---
 
 We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
