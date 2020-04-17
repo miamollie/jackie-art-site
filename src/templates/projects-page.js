@@ -26,19 +26,16 @@ export const ProjectsPageTemplate = ({
       <section className="section section--gradient">
         <div className="container">
           <div class="columns">
-            <div class="column is-9">
+            <div class="column is-8">
               <HTMLContent content={content} />
             </div>
-            <div class="column" />
-            <div class="column" />
+            <div class="column is-4" ><span /></div>
           </div>
         </div>
       </section>
       <section className="section section--gradient">
         <div className="container">
-          <div className="section">
-            <ProjectPreviews />
-          </div>
+          <ProjectPreviews />
         </div>
       </section>
     </div>
