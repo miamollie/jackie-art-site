@@ -33,30 +33,10 @@ export const IndexPageTemplate = ({
             flexDirection: 'column',
           }}
         >
-          <h1
-            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-            style={{
-              boxShadow:
-                '#1a4148 0.5rem 0px 0px, #1a4148 -0.5rem 0px 0px',
-              backgroundColor: '#1a4148',
-              color: 'white',
-              lineHeight: '1',
-              padding: '0.25em',
-            }}
-          >
+          <h1 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen title-on-image">
             {title}
           </h1>
-          <h3
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-            style={{
-              boxShadow:
-                '#1a4148 0.5rem 0px 0px, #1a4148 -0.5rem 0px 0px',
-              backgroundColor: '#1a4148',
-              color: 'white',
-              lineHeight: '1',
-              padding: '0.25em',
-            }}
-          >
+          <h3 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen title-on-image">
             {subheading}
           </h3>
         </div>

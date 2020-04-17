@@ -59,7 +59,7 @@ ProjectPreviews.propTypes = {
 }
 
 export default () => (
-    <StaticQuery
+    <StaticQuery //TODO use hook instead
         query={graphql`
       query ProjectPreviewsQuery {
         allMarkdownRemark(
