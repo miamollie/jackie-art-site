@@ -4,15 +4,19 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
+import Gallery from '@browniebroke/gatsby-image-gallery'
+import '@browniebroke/gatsby-image-gallery/dist/style.css'
 
 export const SingleProjectPageTemplate = ({
   mainImage,
   title,
-  heading,
-  description,
-  content
-}) => (
-    <div className="content">
+  content,
+  gallery,
+}) => {
+  const images = gallery.map(i => (i.image.full.fluid.src));
+  const thumbs = gallery.map(i => (i.image.thumb.fluid));
+  return (
+    <div class="content">
       <div
         className="full-width-image-container margin-top-0"
         style={{
@@ -21,65 +25,40 @@ export const SingleProjectPageTemplate = ({
             })`,
         }}
       >
-        <h2
-          className="has-text-weight-bold is-size-1"
-          style={{
-            boxShadow: '0.5rem 0 0 #1a4148, -0.5rem 0 0 #1a4148',
-            backgroundColor: '#1a4148',
-            color: 'white',
-            padding: '1rem',
-          }}
-        >
-          {title}
-        </h2>
+        <h2 className="has-text-weight-bold is-size-1 title-on-image">{title}</h2>
       </div>
       <section className="section section--gradient">
         <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-7 is-offset-1">
-                <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-                <p>{description}</p>
-              </div>
-            </div>
-          </div>
+          <HTMLContent content={content} />
         </div>
       </section>
-      <HTMLContent content={content} />
+      <section className="section section--gradient">
+        <div className="container">
+          <h3>View images from the project</h3>
+          <Gallery images={images} thumbs={thumbs} />
+        </div>
+      </section>
     </div>
   )
+}
 
 SingleProjectPageTemplate.propTypes = {
   mainImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
   content: PropTypes.node.isRequired,
-  // main: PropTypes.shape({
-  //   heading: PropTypes.string,
-  //   description: PropTypes.string,
-  //   image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  //   image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  //   image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  // }),
-  // fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  gallery: PropTypes.array,
 }
 
 const SingleProjectPage = ({ data }) => {
-  console.log(data)
   const { markdownRemark: post } = data
-  const { frontmatter } = post
+  const { mainImage, title, gallery } = post.frontmatter
   return (
     <Layout>
       <SingleProjectPageTemplate
-        mainImage={frontmatter.mainImage}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        mainImage={mainImage}
+        title={title}
         content={post.html}
-      // main={frontmatter.main}
-      // fullImage={frontmatter.full_image}
+        gallery={gallery}
       />
     </Layout>
   )
@@ -108,8 +87,24 @@ export const SingleProjectPageQuery = graphql`
             }
           }
         }
-        heading
-        description
+        gallery {          
+          image {
+            full: childImageSharp {
+                fluid(
+                  maxWidth: 1024
+                  quality: 85
+                  srcSetBreakpoints: [576, 768, 992, 1200]
+                ) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            thumb: childImageSharp {
+              fluid(maxWidth: 100, maxHeight: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
     }
   }
