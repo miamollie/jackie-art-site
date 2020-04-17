@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Urban Geography Arts',
+    title: 'Creative Urban Mapping',
     description:
-      'Portfolio of Urban Geography Arts projects by Jackie Bourke and Dorothy',
+      'Portfolio of Creative Urban Mapping projects by Jackie Bourke and Dorothy',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

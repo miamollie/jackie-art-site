@@ -9,7 +9,7 @@ import { withPrefix } from 'gatsby'
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <div style={{ minHeight: '100vh', display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -20,7 +20,7 @@ const TemplateWrapper = ({ children }) => {
           sizes="180x180"
           href={`${withPrefix('/')}img/apple-touch-icon.png`}
         />
-        <link
+        {/* <link
           rel="icon"
           type="image/png"
           href={`${withPrefix('/')}img/favicon-32x32.png`}
@@ -31,7 +31,7 @@ const TemplateWrapper = ({ children }) => {
           type="image/png"
           href={`${withPrefix('/')}img/favicon-16x16.png`}
           sizes="16x16"
-        />
+        /> */}
 
         <link
           rel="mask-icon"

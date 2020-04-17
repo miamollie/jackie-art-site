@@ -12,36 +12,36 @@ class ProjectPreviews extends React.Component {
             <div className="columns is-multiline">
                 {projects &&
                     projects.map(({ node: project }) => (
-                        <div className="is-parent column is-6" key={project.id}>
-                            <article className="blog-list-item tile is-child box notification">
-                                <header>
-                                    {project.frontmatter.mainImage ? (
-                                        <div className="featured-thumbnail">
+                        <div className="is-parent column" key={project.id}>
+                            <article className="project-preview-item is-child box">
+                                <div className="columns">
+                                    <div className="column">
+                                        <header>
+                                            <Link
+                                                className="title has-text-primary is-size-4"
+                                                to={project.fields.slug}
+                                            >
+                                                {project.frontmatter.title}
+                                            </Link>
+                                        </header>
+                                        <p>{project.excerpt}</p>
+                                    </div>
+                                    <div className="column">
+                                        {project.frontmatter.mainImage ? (
                                             <PreviewCompatibleImage
                                                 imageInfo={{
                                                     image: project.frontmatter.mainImage,
                                                     alt: `featured image thumbnail for project ${project.frontmatter.title}`,
                                                 }}
                                             />
-                                        </div>
-                                    ) : null}
-                                    <p className="project-meta">
-                                        <Link
-                                            className="title has-text-primary is-size-4"
-                                            to={project.fields.slug}
-                                        >
-                                            {project.frontmatter.title}
-                                        </Link>
-                                    </p>
-                                </header>
-                                <p>
-                                    {project.excerpt}
-                                    <br />
-                                    <br />
-                                    <Link className="button" to={project.fields.slug}>
-                                        Learn more →
-                                    </Link>
-                                </p>
+                                        ) : null}
+                                        <p style={{ padding: "15px 0" }}>
+                                            <Link className="button" to={project.fields.slug}>
+                                                Read more →
+                                            </Link>
+                                        </p>
+                                    </div>
+                                </div>
                             </article>
                         </div>
                     ))}
@@ -59,7 +59,7 @@ ProjectPreviews.propTypes = {
 }
 
 export default () => (
-    <StaticQuery
+    <StaticQuery //TODO use hook instead
         query={graphql`
       query ProjectPreviewsQuery {
         allMarkdownRemark(
@@ -67,7 +67,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 150)
               id
               fields {
                 slug

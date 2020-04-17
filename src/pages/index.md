@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Urban Geography Arts
+title: Creative Urban Mapping
 image: /img/home-jumbotron.jpg
 heading: Exploring the public realm using creative urban medium arts 
 subheading: Lorem ipsum blah etc

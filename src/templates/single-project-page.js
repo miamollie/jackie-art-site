@@ -29,7 +29,14 @@ export const SingleProjectPageTemplate = ({
       </div>
       <section className="section section--gradient">
         <div className="container">
-          <HTMLContent content={content} />
+          <div class="columns">
+            <div class="column is-9">
+              <HTMLContent content={content} />
+            </div>
+            <div class="column" />
+            <div class="column" />
+
+          </div>
         </div>
       </section>
       <section className="section section--gradient">
