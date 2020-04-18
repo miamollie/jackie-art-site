@@ -45,6 +45,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Image, name: image, widget: image}
           - {label: Bios, name: bios, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Name, name: name, widget: string}, {label: Blurb, name: blurb, widget: string}]}
       - file: "src/pages/projects/index.md"
         label: "Projects Page"

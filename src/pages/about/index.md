@@ -2,9 +2,10 @@
 templateKey: about-page
 path: /about
 title: About us
+image: /img/home-jumbotron.jpg
 bios: 
   - name: Jackie Bourke
-    image: /img/test.jpg
+    image: /img/jackie.jpeg
     blurb: The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
   - name: Paula Something    
     image: /img/test.jpg
