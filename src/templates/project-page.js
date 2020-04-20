@@ -2,20 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
+import PreviewCompatibleContent from '../components/PreviewCompatibleContent'
+import PreviewCompatibleGallery from '../components/PreviewCompatibleGallery'
 
-import Gallery from '@browniebroke/gatsby-image-gallery'
-import '@browniebroke/gatsby-image-gallery/dist/style.css'
-
-export const SingleProjectPageTemplate = ({
+export const ProjectPageTemplate = ({
   mainImage,
   title,
   content,
   gallery,
-}) => {
-  const images = gallery.map(i => (i.image.full.fluid.src));
-  const thumbs = gallery.map(i => (i.image.thumb.fluid));
-  return (
+  fromQuery
+}) => (
     <div class="content">
       <div
         className="full-width-image-container margin-top-0"
@@ -31,47 +27,47 @@ export const SingleProjectPageTemplate = ({
         <div className="container">
           <div class="columns">
             <div class="column is-9">
-              <HTMLContent content={content} />
+              <PreviewCompatibleContent content={content} fromQuery={fromQuery} />
             </div>
             <div class="column" />
             <div class="column" />
-
           </div>
         </div>
       </section>
       <section className="section section--gradient">
         <div className="container">
           <h3>View images from the project</h3>
-          <Gallery images={images} thumbs={thumbs} />
+          <PreviewCompatibleGallery images={gallery} />
         </div>
       </section>
     </div>
   )
-}
 
-SingleProjectPageTemplate.propTypes = {
+
+ProjectPageTemplate.propTypes = {
   mainImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   content: PropTypes.node.isRequired,
   gallery: PropTypes.array,
 }
 
-const SingleProjectPage = ({ data }) => {
+const ProjectPage = ({ data }) => {
   const { markdownRemark: post } = data
   const { mainImage, title, gallery } = post.frontmatter
   return (
     <Layout>
-      <SingleProjectPageTemplate
+      <ProjectPageTemplate
         mainImage={mainImage}
         title={title}
         content={post.html}
         gallery={gallery}
+        fromQuery
       />
     </Layout>
   )
 }
 
-SingleProjectPage.propTypes = {
+ProjectPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -79,10 +75,10 @@ SingleProjectPage.propTypes = {
   }),
 }
 
-export default SingleProjectPage
+export default ProjectPage
 
-export const SingleProjectPageQuery = graphql`
-  query SingleProjectPage($id: String!) {
+export const ProjectPageQuery = graphql`
+  query ProjectPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

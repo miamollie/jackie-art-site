@@ -63,7 +63,7 @@ export default () => (
         query={graphql`
       query ProjectPreviewsQuery {
         allMarkdownRemark(
-          filter: { frontmatter: { templateKey: { eq: "single-project-page" } } }
+          filter: { frontmatter: { templateKey: { eq: "project-page" } } }
         ) {
           edges {
             node {

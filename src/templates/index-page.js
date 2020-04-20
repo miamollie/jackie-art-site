@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import { HTMLContent } from '../components/Content'
+import PreviewCompatibleContent from '../components/PreviewCompatibleContent'
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = ({
@@ -9,6 +9,7 @@ export const IndexPageTemplate = ({
   title,
   content,
   heading,
+  fromQuery,
 }) => (
     <div>
       <div
@@ -44,7 +45,7 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <HTMLContent className="content" content={content} />
+                <PreviewCompatibleContent className="content" content={content} fromQuery={fromQuery} />
               </div>
             </div>
           </div>
@@ -69,6 +70,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         content={html}
+        fromQuery
       />
     </Layout>
   )

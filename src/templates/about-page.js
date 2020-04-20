@@ -2,11 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
-import Img from "gatsby-image"
+import PreviewCompatibleContent from '../components/PreviewCompatibleContent'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-
-export const AboutPageTemplate = ({ title, content, bios, image }) => (
+export const AboutPageTemplate = ({ title, content, bios, image, fromQuery }) => (
   <>
     <div
       className="full-width-image margin-top-0"
@@ -38,13 +37,13 @@ export const AboutPageTemplate = ({ title, content, bios, image }) => (
       <div className="container">
         <div className="columns">
           <div className="column is-half-desktop is-half-mobile is-offset-1">
-            <HTMLContent className="content" content={content} />
+            <PreviewCompatibleContent className="content" content={content} fromQuery={fromQuery} />
           </div>
           <div className="column is-one-third-desktop is-half-mobile is-offset-1">
             {/* TODO Bios should wrap on mobile */}
             {bios.map(b => (
               <article className="box has-text-centered" key={b.name} style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
-                <Img className="image is-rounded" fluid={b.image.childImageSharp.fluid} style={{ marginBottom: "15px" }} />
+                <PreviewCompatibleImage className="image is-rounded" imageInfo={{ image: b.image }} style={{ marginBottom: "15px" }} />
                 <h3 className="title is-size-5 has-text-weight-semibold is-bold-light">{b.name}</h3>
                 <p>{b.blurb}</p>
               </article>
@@ -71,6 +70,7 @@ const AboutPage = ({ data }) => {
         image={post.frontmatter.image}
         bios={post.frontmatter.bios}
         content={post.html}
+        fromQuery
       />
     </Layout>
   )
