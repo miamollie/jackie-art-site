@@ -4,19 +4,14 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
-import Gallery from '@browniebroke/gatsby-image-gallery'
-import '@browniebroke/gatsby-image-gallery/dist/style.css'
+import PreviewCompatibleGallery from '../components/PreviewCompatibleGallery'
 
 export const ProjectPageTemplate = ({
   mainImage,
   title,
   content,
   gallery,
-}) => {
-
-  // const images = gallery.map(i => (i.image.full.fluid.src));
-  // const thumbs = gallery.map(i => (i.image.thumb.fluid));
-  return (
+}) => (
     <div class="content">
       <div
         className="full-width-image-container margin-top-0"
@@ -42,12 +37,12 @@ export const ProjectPageTemplate = ({
       <section className="section section--gradient">
         <div className="container">
           <h3>View images from the project</h3>
-          {/* <Gallery images={images} thumbs={thumbs} /> */}
+          <PreviewCompatibleGallery images={gallery}/>
         </div>
       </section>
     </div>
   )
-}
+
 
 ProjectPageTemplate.propTypes = {
   mainImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
