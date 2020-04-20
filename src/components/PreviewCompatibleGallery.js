@@ -12,7 +12,6 @@ const PreviewCompatibleGallery = ({ images }) => {
     }
 
     if (images.every(a => typeof a == 'string')) {
-        console.warn('B')
         return images.map(i => <img style={{ height: '150px', width: '150px', margin: '2rem' }} src={i} />)
     }
 

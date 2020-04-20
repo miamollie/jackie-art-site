@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
-
+import PreviewCompatibleContent from '../components/PreviewCompatibleContent'
 import PreviewCompatibleGallery from '../components/PreviewCompatibleGallery'
 
 export const ProjectPageTemplate = ({
@@ -11,6 +10,7 @@ export const ProjectPageTemplate = ({
   title,
   content,
   gallery,
+  fromQuery
 }) => (
     <div class="content">
       <div
@@ -27,7 +27,7 @@ export const ProjectPageTemplate = ({
         <div className="container">
           <div class="columns">
             <div class="column is-9">
-              <HTMLContent content={content} />
+              <PreviewCompatibleContent content={content} fromQuery={fromQuery} />
             </div>
             <div class="column" />
             <div class="column" />
@@ -37,7 +37,7 @@ export const ProjectPageTemplate = ({
       <section className="section section--gradient">
         <div className="container">
           <h3>View images from the project</h3>
-          <PreviewCompatibleGallery images={gallery}/>
+          <PreviewCompatibleGallery images={gallery} />
         </div>
       </section>
     </div>
@@ -61,6 +61,7 @@ const ProjectPage = ({ data }) => {
         title={title}
         content={post.html}
         gallery={gallery}
+        fromQuery
       />
     </Layout>
   )

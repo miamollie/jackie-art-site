@@ -2,13 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
+import PreviewCompatibleContent from '../components/PreviewCompatibleContent'
 import ProjectPreviews from '../components/ProjectPreviews'
 
 export const ProjectsPageTemplate = ({
   image,
   title,
   content,
+  fromQuery,
 }) => (
     <div className="content">
       <div
@@ -27,7 +28,7 @@ export const ProjectsPageTemplate = ({
         <div className="container">
           <div class="columns">
             <div class="column is-8">
-              <HTMLContent content={content} />
+              <PreviewCompatibleContent content={content} fromQuery={fromQuery} />
             </div>
             <div class="column is-4" ><span /></div>
           </div>
@@ -56,6 +57,7 @@ const ProjectsPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         content={data.markdownRemark.html}
+        fromQuery
       />
     </Layout>
   )

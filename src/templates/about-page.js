@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
+import PreviewCompatibleContent from '../components/PreviewCompatibleContent'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const AboutPageTemplate = ({ title, content, bios, image }) => (
+export const AboutPageTemplate = ({ title, content, bios, image, fromQuery }) => (
   <>
     <div
       className="full-width-image margin-top-0"
@@ -37,7 +37,7 @@ export const AboutPageTemplate = ({ title, content, bios, image }) => (
       <div className="container">
         <div className="columns">
           <div className="column is-half-desktop is-half-mobile is-offset-1">
-            <HTMLContent className="content" content={content} />
+            <PreviewCompatibleContent className="content" content={content} fromQuery={fromQuery} />
           </div>
           <div className="column is-one-third-desktop is-half-mobile is-offset-1">
             {/* TODO Bios should wrap on mobile */}
@@ -70,6 +70,7 @@ const AboutPage = ({ data }) => {
         image={post.frontmatter.image}
         bios={post.frontmatter.bios}
         content={post.html}
+        fromQuery
       />
     </Layout>
   )
