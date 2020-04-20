@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
-import Img from "gatsby-image"
-
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const AboutPageTemplate = ({ title, content, bios, image }) => (
   <>
@@ -44,7 +43,7 @@ export const AboutPageTemplate = ({ title, content, bios, image }) => (
             {/* TODO Bios should wrap on mobile */}
             {bios.map(b => (
               <article className="box has-text-centered" key={b.name} style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
-                <Img className="image is-rounded" fluid={b.image.childImageSharp.fluid} style={{ marginBottom: "15px" }} />
+                <PreviewCompatibleImage className="image is-rounded" imageInfo={{ image: b.image }} style={{ marginBottom: "15px" }} />
                 <h3 className="title is-size-5 has-text-weight-semibold is-bold-light">{b.name}</h3>
                 <p>{b.blurb}</p>
               </article>

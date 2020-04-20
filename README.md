@@ -17,6 +17,8 @@ And use `local_backend: true` in config.yml
 ```
 $ yarn
 $ netlify dev # or ntl dev
+
+`localStorage.removeItem("netlifySiteURL")`
 ```
 
 This uses the new [Netlify Dev](https://www.netlify.com/products/dev/) CLI feature to serve any functions you have in the `lambda` folder.

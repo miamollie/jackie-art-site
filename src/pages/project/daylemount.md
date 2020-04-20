@@ -1,8 +1,6 @@
 ---
-templateKey: 'single-project-page'
+templateKey: 'project-page'
 title: 'Daylemount'
-description: >-
-  Here is a one liner describing the Daylemount project
 mainImage: /img/test.jpg
 gallery: 
   - image: /img/products-grid1.jpg
