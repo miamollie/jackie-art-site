@@ -4,11 +4,14 @@ title: Creative Urban Mapping
 image: /img/image-for-creative-mapping-website.jpeg
 heading: Mapping the everyday experience of urban public space
 ---
+### Creative urban mapping
 
-### What things we do
+<!--StartFragment-->
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+Welcome to our website. The creative mapping projects on this site were developed by Jackie Bourke and Dorothy Smith, an urban researcher and an artist, who share an interest in the complexities of urban public space. <!--EndFragment-->
 
-### Methodology
+### Recent projects
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+<!--StartFragment-->
+
+**Dalymount Park: Mapping a Unique Architectural Space** is a project which focuses on an iconic football stadium in the heart of Dublin City. Originally built in 1901, Dalymount Park today is a haphazard mix of structures and details dating back across time. **Spatial Stories – An Exploration of Young People’s Everyday Experience of Public Space**, in this project a group of Dublin based teenagers mapped their everyday experience of public space. <!--EndFragment-->
