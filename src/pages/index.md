@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
 title: Creative Urban Mapping
-image: /img/home-jumbotron.jpg
-heading: Exploring the public realm using creative urban medium arts 
+image: /img/image-for-creative-mapping-website.jpeg
+heading: Mapping the everyday experience of urban public space
 ---
 
 ### What things we do
