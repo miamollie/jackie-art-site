@@ -10,7 +10,7 @@ bios:
       Jackie is a researcher with an interest in the lived urban environment.
       She lectures in urban geography at University College, Dublin
   - name: Dorothy Smith
-    image: /img/dorothy-smith.jpg
+    image: /img/dorothy-smith_2.jpg
     blurb: >-
       Dorothy is a visual artist whose work is primarily concerned with the
       built environment of public space. Her practice is rooted in studio based
