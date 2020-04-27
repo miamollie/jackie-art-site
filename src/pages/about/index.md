@@ -2,20 +2,33 @@
 templateKey: about-page
 path: /about
 title: About us
-image: /img/home-jumbotron.jpg
-bios: 
+image: /img/image-for-creative-mapping-website.jpeg
+bios:
   - name: Jackie Bourke
     image: /img/jackie.jpeg
-    blurb: The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
-  - name: Paula Something    
+    blurb: >-
+      The forest-like structure of shade coffee farms provides habitat for a
+      great number of migratory and resident species.
+  - name: Paula Something
     image: /img/test.jpg
-    blurb: The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
-
+    blurb: >-
+      The forest-like structure of shade coffee farms provides habitat for a
+      great number of migratory and resident species.
 ---
-### What things we do
+### Our mapping projects
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+<!--StartFragment-->
 
-### Methodology
+Jackie Bourke and Dorothy Smith work together on creative mapping projects.  The share an interest in the everyday experience of urban public space. 
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Jackie is a researcher with an interest in the lived urban environment. She lectures in urban geography at University College, Dublin. Dorothy is a visual artist whose work is primarily concerned with the built environment of public space. Her practice is rooted in studio based work with a keen interest in embracing contexts beyond those of the studio and gallery. Her work includes public art projects, curation, exhibitions and community based work.
+
+Through their creative mapping protects they explore urban public space using collaborative methods to work with local communities
+
+
+
+<!--EndFragment-->
+
+### Funding
+
+Our creative mapping projects are funded by awards through The Arts Council of Ireland Engaging with Architecture Scheme
