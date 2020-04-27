@@ -17,7 +17,7 @@ bios:
       work with a keen interest in embracing contexts beyond those of the studio
       and gallery.
 ---
-### Our mapping projects
+### Creative urban mapping projects
 
 <!--StartFragment-->
 
