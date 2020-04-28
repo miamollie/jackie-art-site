@@ -2,6 +2,7 @@
 templateKey: 'project-page'
 title: 'Daylemount'
 mainImage: /img/test.jpg
+videoUrl: https://player.vimeo.com/video/342797845
 gallery: 
   - image: /img/products-grid1.jpg
     alt: Image alt text 

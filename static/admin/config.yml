@@ -25,8 +25,8 @@ collections:
       - {label: Title, name: title, widget: string}
       - {label: MainImage, name: mainImage, widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Video Url", name: "videoUrl", widget: "string"}
       - {label: Gallery, name: gallery, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}
-      # video -> inline in markdown maybe?
 
   - name: "pages"
     label: "Pages"

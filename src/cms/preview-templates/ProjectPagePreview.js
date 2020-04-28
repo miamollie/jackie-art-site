@@ -10,6 +10,7 @@ const ProjectPagePreview = ({ entry, getAsset, widgetFor }) => {
     <ProjectPageTemplate
       mainImage={getAsset(data.mainImage)}
       title={data.title}
+      videoUrl={data.videoUrl}
       content={widgetFor('body')}
       gallery={galleryImages}
     />

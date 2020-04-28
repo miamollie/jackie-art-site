@@ -36,10 +36,10 @@ export const AboutPageTemplate = ({ title, content, bios, image, fromQuery }) =>
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
-          <div className="column is-half-desktop is-half-mobile is-offset-1">
+          <div className="column is-half-desktop is-offset-1">
             <PreviewCompatibleContent className="content" content={content} fromQuery={fromQuery} />
           </div>
-          <div className="column is-one-third-desktop is-half-mobile is-offset-1">
+          <div className="column is-one-third-desktop is-offset-1">
             {/* TODO Bios should wrap on mobile */}
             {bios.map(b => (
               <article className="box has-text-centered" key={b.name} style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
