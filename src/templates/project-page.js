@@ -54,7 +54,7 @@ export const ProjectPageTemplate = ({
         </div>
       </section>
       <section className="section section--gradient">
-        <div className="container">
+        <div className="container gallery">
           <h3>View images from the project</h3>
           <PreviewCompatibleGallery images={gallery} />
         </div>
