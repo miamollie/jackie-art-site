@@ -8,7 +8,7 @@ const PreviewCompatibleGallery = ({ images }) => {
     if (images.every(a => typeof a == 'object')) {
         const full = images.map(i => (i.image.full.fluid.src));
         const thumbs = images.map(i => (i.image.thumb.fluid));
-        return <Gallery images={full} thumbs={thumbs} />
+        return <Gallery className="gallery" images={full} thumbs={thumbs} />
     }
 
     if (images.every(a => typeof a == 'string')) {
