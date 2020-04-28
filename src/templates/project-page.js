@@ -10,7 +10,8 @@ export const ProjectPageTemplate = ({
   title,
   content,
   gallery,
-  fromQuery
+  fromQuery,
+  videoUrl
 }) => (
     <div class="content">
       <div
@@ -26,11 +27,29 @@ export const ProjectPageTemplate = ({
       <section className="section section--gradient">
         <div className="container">
           <div class="columns">
-            <div class="column is-9">
+            <div class="column is-half-desktop is-offset-1">
               <PreviewCompatibleContent content={content} fromQuery={fromQuery} />
             </div>
-            <div class="column" />
-            <div class="column" />
+            {videoUrl ?
+              <div className="column is-one-third-desktop is-offset-1">
+                <div className="videoWrapper">
+                  <iframe
+                    src={videoUrl}
+                    title={"videoTitle"}
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameBorder="0"
+                    webkitallowfullscreen="true"
+                    mozallowfullscreen="true"
+                    allowFullScreen
+                    width="560" height="349"
+                  />
+                </div>
+              </div>
+              :
+              <>
+                <div class="column" />
+                <div class="column" />
+              </>}
           </div>
         </div>
       </section>
@@ -53,7 +72,8 @@ ProjectPageTemplate.propTypes = {
 
 const ProjectPage = ({ data }) => {
   const { markdownRemark: post } = data
-  const { mainImage, title, gallery } = post.frontmatter
+
+  const { mainImage, title, gallery, videoUrl } = post.frontmatter
   return (
     <Layout>
       <ProjectPageTemplate
@@ -61,6 +81,7 @@ const ProjectPage = ({ data }) => {
         title={title}
         content={post.html}
         gallery={gallery}
+        videoUrl={videoUrl}
         fromQuery
       />
     </Layout>
@@ -83,6 +104,7 @@ export const ProjectPageQuery = graphql`
       html
       frontmatter {
         title
+        videoUrl
         mainImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
