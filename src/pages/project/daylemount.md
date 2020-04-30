@@ -1,19 +1,19 @@
 ---
-templateKey: 'project-page'
-title: 'Daylemount'
-mainImage: /img/test.jpg
-videoUrl: https://player.vimeo.com/video/342797845
-gallery: 
+templateKey: project-page
+title: Dalymount Park
+mainImage: /img/bigger-than-the-game.jpg
+videoUrl: 'https://vimeo.com/342797845'
+gallery:
   - image: /img/products-grid1.jpg
-    alt: Image alt text 
+    alt: Image alt text
   - image: /img/products-grid2.jpg
-    alt: Image alt text 
+    alt: Image alt text
   - image: /img/products-grid3.jpg
-    alt: Image alt text 
+    alt: Image alt text
   - image: /img/meeting-space.png
-    alt: Image alt text 
+    alt: Image alt text
   - image: /img/test.jpg
-    alt: Image alt text 
+    alt: Image alt text
 ---
 
 
