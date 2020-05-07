@@ -8,12 +8,10 @@ gallery:
     alt: Image alt text
   - image: /img/products-grid2.jpg
     alt: Image alt text
-  - image: /img/products-grid3.jpg
-    alt: Image alt text
   - image: /img/meeting-space.png
     alt: Image alt text
-  - image: /img/test.jpg
-    alt: Image alt text
+  - image: /img/image-for-creative-mapping-website.jpeg
+    alt: image alt text
 ---
 
 
