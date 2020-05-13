@@ -8,6 +8,8 @@ gallery:
     alt: image alt text
   - image: /img/dressing-room-2.jpg
     alt: 'alt '
+  - image: /img/floodlights.jpg
+    alt: Floodlights
 ---
 
 
