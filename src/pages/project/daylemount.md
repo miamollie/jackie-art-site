@@ -4,8 +4,6 @@ title: Dalymount Park
 mainImage: /img/bigger-than-the-game.jpg
 videoUrl: 'https://vimeo.com/418064877'
 gallery:
-  - image: /img/image-for-creative-mapping-website.jpeg
-    alt: image alt text
   - image: /img/floodlights.jpg
     alt: Floodlights
   - image: /img/dressing-room-2.jpg
