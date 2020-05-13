@@ -16,6 +16,8 @@ gallery:
     alt: Under Connaught Street Stand
   - image: /img/cast-iron-turnstile.cr2
     alt: Old Cast Iron Turnstiles
+  - image: /img/referee-room.cr2
+    alt: Referee Room
 ---
 
 
