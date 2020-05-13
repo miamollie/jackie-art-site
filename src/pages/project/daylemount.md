@@ -6,10 +6,10 @@ videoUrl: 'https://vimeo.com/418064877'
 gallery:
   - image: /img/image-for-creative-mapping-website.jpeg
     alt: image alt text
-  - image: /img/dressing-room-2.jpg
-    alt: 'alt '
   - image: /img/floodlights.jpg
     alt: Floodlights
+  - image: /img/dressing-room-2.jpg
+    alt: 'alt '
   - image: /img/tv-gantry.jpg
     alt: TV Gantry
   - image: /img/under-connaught-street-stand.jpg
