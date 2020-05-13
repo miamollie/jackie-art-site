@@ -12,6 +12,8 @@ gallery:
     alt: Floodlights
   - image: /img/tv-gantry.jpg
     alt: TV Gantry
+  - image: /img/under-connaught-street-stand.jpg
+    alt: Under Connaught Street Stand
 ---
 
 
