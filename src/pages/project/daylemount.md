@@ -2,7 +2,7 @@
 templateKey: project-page
 title: Dalymount Park
 mainImage: /img/bigger-than-the-game.jpg
-videoUrl: 'https://player.vimeo.com/video/342797845'
+videoUrl: 'https://vimeo.com/418064877'
 gallery:
   - image: /img/image-for-creative-mapping-website.jpeg
     alt: image alt text
