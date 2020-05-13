@@ -10,6 +10,8 @@ gallery:
     alt: 'alt '
   - image: /img/floodlights.jpg
     alt: Floodlights
+  - image: /img/tv-gantry.jpg
+    alt: TV Gantry
 ---
 
 
