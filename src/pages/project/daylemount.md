@@ -4,10 +4,10 @@ title: Dalymount Park
 mainImage: /img/bigger-than-the-game.jpg
 videoUrl: 'https://player.vimeo.com/video/418064877'
 gallery:
-  - image: /img/floodlights.jpg
-    alt: Floodlights
   - image: /img/dressing-room-2.jpg
     alt: 'alt '
+  - image: /img/floodlights.jpg
+    alt: Floodlights
   - image: /img/tv-gantry.jpg
     alt: TV Gantry
   - image: /img/under-connaught-street-stand.jpg
