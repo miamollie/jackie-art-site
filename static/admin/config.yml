@@ -33,7 +33,7 @@ collections:
           label: "Video Url",
           name: "videoUrl",
           widget: "string",
-          required: "false",
+          required: false,
         }
       - {
           label: Gallery,
