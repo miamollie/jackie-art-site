@@ -2,7 +2,7 @@
 templateKey: project-page
 title: Dalymount Park
 mainImage: /img/bigger-than-the-game.jpg
-videoUrl: 'https://player.vimeo.com/video/418064877'
+videoUrl: "https://player.vimeo.com/video/418064877"
 gallery:
   - image: /img/dressing-room-2.jpg
     alt: 'alt '
@@ -12,14 +12,14 @@ gallery:
     alt: TV Gantry
   - image: /img/under-connaught-street-stand.jpg
     alt: Under Connaught Street Stand
-  - image: /img/referee-room.jpg
-    alt: Referee room
   - image: /img/cast-iron-turnstile.jpg
-    alt: Castiron thing
+    alt: Old Cast Iron Turnstiles
+  - image: /img/referee-room.jpg
+    alt: Referee Room
 ---
 
-
 ## About this project
+
 **Dalymount Park: Mapping a Unique Architectural Space** is a collaborative mapping project developed by Jackie Bourke and Dorothy Smith. It was funded through The Arts Council of Ireland, Engaging with Architecture Scheme.
 
 Dalymount Park is an iconic football stadium in Phibsborough, Dublin. Originally built in 1901 Dalymount has since been in an almost constant state of flux, through adaptations, new additions, and general wear and tear. Today it is a haphazard mix of structures and detail. Under city development plans it will soon be knocked and a new municipal stadium built in its place. The project has captured a moment in time, diverse memories and strong emotional attachments.Using photography, interviews and drawing we mapped out the architectural heritage and everyday experience of this space. The project comprises **Drawing Dalymount: The Colouring Book** which is a playful book of drawings made by workshop participants, and **Dalymount: Bigger Than The Game**, a projection of photographs and interviews with people who have rich associations with the space.
@@ -31,5 +31,3 @@ Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occa
 > "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
