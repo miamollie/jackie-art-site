@@ -60,7 +60,7 @@ export const ProjectPageTemplate = ({
     <section className="section section--gradient">
       <div className="container gallery">
         <h3>View images from the project</h3>
-        <PreviewCompatibleGallery images={gallery} />
+        <PreviewCompatibleGallery images={gallery} imgClass="gallery-image" />
       </div>
     </section>
   </div>
