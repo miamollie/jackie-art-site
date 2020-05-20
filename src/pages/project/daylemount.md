@@ -16,6 +16,8 @@ gallery:
     alt: Referee room
   - image: /img/cast-iron-turnstile.jpg
     alt: Castiron thing
+  - image: /img/vomitorium.jpg
+    alt: Vomitorium
 ---
 
 
