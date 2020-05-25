@@ -21,12 +21,11 @@ gallery:
   - image: /img/dressing-room-2.jpg
     alt: 'alt '
 ---
-
-
 ## About this project
+
 **Dalymount Park: Mapping a Unique Architectural Space** is a collaborative mapping project developed by Jackie Bourke and Dorothy Smith. It was funded through The Arts Council of Ireland, Engaging with Architecture Scheme.
 
-Dalymount Park is an iconic football stadium in Phibsborough, Dublin. Originally built in 1901 Dalymount has since been in an almost constant state of flux, through adaptations, new additions, and general wear and tear. Today it is a haphazard mix of structures and detail. Under city development plans it will soon be knocked and a new municipal stadium built in its place. The project has captured a moment in time, diverse memories and strong emotional attachments.Using photography, interviews and drawing we mapped out the architectural heritage and everyday experience of this space. The project comprises **Drawing Dalymount: The Colouring Book** which is a playful book of drawings made by workshop participants, and **Dalymount: Bigger Than The Game**, a projection of photographs and interviews with people who have rich associations with the space.
+Dalymount Park is an iconic football stadium in Phibsborough, Dublin. Originally built in 1901 Dalymount has since been in an almost constant state of flux, through adaptations, new additions, and general wear and tear. Today it is a haphazard mix of structures and detail. Under city development plans it will soon be knocked and a new municipal stadium built in its place. The project has captured a moment in time, diverse memories and strong emotional attachments. Using photography, interviews and drawing we mapped out the architectural heritage and everyday experience of this space. The project comprises **Drawing Dalymount: The Colouring Book** which is a playful book of drawings made by workshop participants, and **Dalymount: Bigger Than The Game**, a projection of photographs and interviews with people who have rich associations with the space.
 
 ## The Colouring Book
 
@@ -35,5 +34,3 @@ Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occa
 > "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
