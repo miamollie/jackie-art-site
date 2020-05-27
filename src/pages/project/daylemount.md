@@ -6,6 +6,8 @@ videoUrl: 'https://player.vimeo.com/video/418064877'
 gallery:
   - image: /img/floodlights.jpg
     alt: Floodlights
+  - image: /img/drawing-book-cover_upload.jpeg
+    alt: Drawing Dalymount Cover
   - image: /img/under-connaught-street-stand.jpg
     alt: Under Connaught Street Stand
   - image: /img/cast-iron-turnstile.jpg
@@ -16,8 +18,8 @@ gallery:
     alt: Tramway End
   - image: /img/dressing-room-2.jpg
     alt: 'alt '
-  - image: /img/drawing-book-cover_upload.jpeg
-    alt: Drawing Dalymount Cover
+  - image: /img/drawing-dalymount-inside-image.jpeg
+    alt: Drawing Dalymount  Image
 ---
 ## About this project
 
