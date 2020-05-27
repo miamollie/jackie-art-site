@@ -21,7 +21,7 @@ gallery:
   - image: /img/drawing-dalymount-inside-image.jpeg
     alt: Drawing Dalymount  Image
 ---
-## About this project
+
 
 **Dalymount Park: Mapping a Unique Architectural Space** is a collaborative mapping project developed by Jackie Bourke and Dorothy Smith. It was funded through The Arts Council of Ireland, Engaging with Architecture Scheme.
 
