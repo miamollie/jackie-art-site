@@ -6,12 +6,8 @@ videoUrl: 'https://player.vimeo.com/video/418064877'
 gallery:
   - image: /img/floodlights.jpg
     alt: Floodlights
-  - image: /img/tv-gantry.jpg
-    alt: TV Gantry
   - image: /img/under-connaught-street-stand.jpg
     alt: Under Connaught Street Stand
-  - image: /img/referee-room.jpg
-    alt: Referee room
   - image: /img/cast-iron-turnstile.jpg
     alt: Castiron thing
   - image: /img/vomitorium.jpg
@@ -20,6 +16,8 @@ gallery:
     alt: Tramway End
   - image: /img/dressing-room-2.jpg
     alt: 'alt '
+  - image: /img/drawing-book-cover_upload.jpeg
+    alt: Drawing Dalymount Cover
 ---
 ## About this project
 
