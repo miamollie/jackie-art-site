@@ -9,8 +9,6 @@ gallery:
     alt: Urban Neglect
   - image: /img/dean-temple-bar.jpg
     alt: Temple Bar
-  - image: /img/annoying-sign-with-plants-growing-over-it.png
-    alt: Annoying Sign
   - image: /img/sean2.jpg
     alt: Basketball Hoop
 ---
