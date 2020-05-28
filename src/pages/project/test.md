@@ -11,6 +11,10 @@ gallery:
     alt: Temple Bar
   - image: /img/sean2.jpg
     alt: Basketball Hoop
+  - image: /img/brochure-drawing-3.jpg
+    alt: Urban Street View
+  - image: /img/brochure-drawing-6.jpg
+    alt: Chicken Lane Doorway
 ---
 **Spatial Stories: An exploration of young people's everyday experience of public space** is a collaborative project which maps out the urban public realm from the perspective of teenagers. Six young people aged 16 and 17 participated in the project, which was developed by Dorothy Smith and Jackie Bourke. Using photography, creative mapping techniques, drawing and creative writing, they captured the fleeting moments and subtle details that shape their urban experience. They also created an intervention in public space with posters mounted on lampposts. These posters displayed slogans such as 'Teenagers Welcome' and 'You are not Suspicious'. They were a playful response to negative experiences the young people have had. 
 
