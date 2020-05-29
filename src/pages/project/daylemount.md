@@ -2,7 +2,7 @@
 templateKey: project-page
 title: Dalymount Park
 mainImage: /img/bigger-than-the-game.jpg
-videoUrl: 'https://player.vimeo.com/video/418064877'
+videoUrl: "https://player.vimeo.com/video/418064877"
 gallery:
   - image: /img/floodlights.jpg
     alt: Floodlights
@@ -17,11 +17,10 @@ gallery:
   - image: /img/tramway-end.jpg
     alt: Tramway End
   - image: /img/dressing-room-2.jpg
-    alt: 'alt '
+    alt: "alt "
   - image: /img/drawing-dalymount-inside-image.jpeg
     alt: Drawing Dalymount  Image
 ---
-
 
 **Dalymount Park: Mapping a Unique Architectural Space** is a collaborative mapping project developed by Jackie Bourke and Dorothy Smith. It was funded through The Arts Council of Ireland, Engaging with Architecture Scheme.
 
@@ -29,10 +28,10 @@ Dalymount Park is an iconic football stadium in Phibsborough, Dublin. Originally
 
 ### Drawing Dalymount: The Colouring Book
 
-Dalymount Park, home to Bohemians Football Club for over 100 years, is located in the urban village of Phibsborough, north Dublin. On a cold wet Saturday morning in November 2018, over 40 people of all ages and abilities gathered in Dalymount Park to draw the architecture of this unique space. 
+Dalymount Park, home to Bohemians Football Club for over 100 years, is located in the urban village of Phibsborough, north Dublin. On a cold wet Saturday morning in November 2018, over 40 people of all ages and abilities gathered in Dalymount Park to draw the architecture of this unique space.
 
-The drawing day was facilitated by Dorothy Smith and Jackie Bourke. Drawing Dalymount: The Colouring Book comprises a series of drawings produced that day. It marks a moment in the stadium's evolution from the perspective of a diverse group of people.  The drawings in the book breathe new life in to the architecture of the stadium and the many stories it has to tell. You can flick through a copy here:
+The drawing day was facilitated by Dorothy Smith and Jackie Bourke. Drawing Dalymount: The Colouring Book comprises a series of drawings produced that day. It marks a moment in the stadium's evolution from the perspective of a diverse group of people. The drawings in the book breathe new life in to the architecture of the stadium and the many stories it has to tell. You can flick through a copy [here](/img/99bake-poster-serif-.pdf):
 
 ### Dalymount: Bigger Than The Game
 
-This evocative slow paced film maps out the layers of place attachment, socio-cultural history, and fascinating architectural detail at Dalymount Park. It  is a site which holds generations of memories rooted in its haphazard mix of structures and places.  Layering memory, place, attachment and belonging through image and text Dalymount: Bigger Than The Game draws viewers in to share precious  moments mapped out across time and space; to reminisce, to reflect and reimagine the idiosyncratic detail of this stadium.  .
+This evocative slow paced film maps out the layers of place attachment, socio-cultural history, and fascinating architectural detail at Dalymount Park. It is a site which holds generations of memories rooted in its haphazard mix of structures and places. Layering memory, place, attachment and belonging through image and text Dalymount: Bigger Than The Game draws viewers in to share precious moments mapped out across time and space; to reminisce, to reflect and reimagine the idiosyncratic detail of this stadium.
