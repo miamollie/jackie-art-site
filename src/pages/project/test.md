@@ -4,6 +4,7 @@ title: Spatial Stories
 mainImage: /img/robert-3.jpg
 heading: This is a test project
 videoUrl: ''
+project_pdf: /img/99bake-poster-serif-.pdf
 gallery:
   - image: /img/aoibhin2.jpg
     alt: Urban Neglect
