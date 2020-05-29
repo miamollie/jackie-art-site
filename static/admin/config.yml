@@ -40,9 +40,6 @@ collections:
           name: "project_pdf",
           widget: "file",
           required: false,
-          media_library:
-            config:
-              multiple: false
         }
       - {
           label: Gallery,
