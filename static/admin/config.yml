@@ -36,6 +36,15 @@ collections:
           required: false,
         }
       - {
+          label: "Project PDF",
+          name: "project_pdf",
+          widget: "file",
+          required: false,
+          media_library:
+            config:
+              multiple: false
+        }
+      - {
           label: Gallery,
           name: gallery,
           widget: list,
