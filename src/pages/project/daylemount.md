@@ -30,7 +30,7 @@ Dalymount Park is an iconic football stadium in Phibsborough, Dublin. Originally
 
 Dalymount Park, home to Bohemians Football Club for over 100 years, is located in the urban village of Phibsborough, north Dublin. On a cold wet Saturday morning in November 2018, over 40 people of all ages and drawing abilities gathered in Dalymount Park to draw the architecture of this unique space.
 
-The drawing day was facilitated by Dorothy Smith and Jackie Bourke. **Drawing Dalymount: The Colouring Book** comprises a series of drawings produced that day. It marks a moment in the stadium's evolution from the perspective of a diverse group of people. The drawings in the book breathe new life in to the architecture of the stadium and the many stories it has to tell. You can flick through a copy by clicking [here](/img/drawingdalymount-the-colouring-book.pdf)
+The drawing day was facilitated by Dorothy Smith and Jackie Bourke. **Drawing Dalymount: The Colouring Book** comprises a series of drawings produced that day. It marks a moment in the stadium's evolution from the perspective of a diverse group of people. The drawings in the book breathe new life in to the architecture of the stadium and the many stories it has to tell. You can flick through a copy by clicking **[here](/img/drawingdalymount-the-colouring-book.pdf)**
 
 ### Dalymount: Bigger Than The Game
 
