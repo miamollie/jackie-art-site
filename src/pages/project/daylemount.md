@@ -1,7 +1,7 @@
 ---
 templateKey: project-page
 title: Dalymount Park
-mainImage: /img/bigger-than-the-game.jpg
+mainImage: /img/floodlights.jpg
 videoUrl: 'https://player.vimeo.com/video/418064877'
 project_pdf: /img/drawingdalymount-the-colouring-book.pdf
 gallery:
