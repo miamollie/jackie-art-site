@@ -5,8 +5,6 @@ mainImage: /img/floodlights.jpg
 videoUrl: 'https://player.vimeo.com/video/418064877'
 project_pdf: /img/drawingdalymount-the-colouring-book.pdf
 gallery:
-  - image: /img/floodlights.jpg
-    alt: Floodlights
   - image: /img/drawing-book-cover_upload.jpeg
     alt: Drawing Dalymount Cover
   - image: /img/under-connaught-street-stand.jpg
@@ -21,6 +19,8 @@ gallery:
     alt: 'alt '
   - image: /img/drawing-dalymount-inside-image.jpeg
     alt: Drawing Dalymount  Image
+  - image: /img/des-kelly-carpets-stand.jpg
+    alt: Des Kelly Carpets Stand
 ---
 **Dalymount Park: Mapping a Unique Architectural Space** is a collaborative mapping project developed by Jackie Bourke and Dorothy Smith. It was funded through The Arts Council of Ireland, Engaging with Architecture Scheme.
 
