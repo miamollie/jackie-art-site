@@ -28,3 +28,7 @@ Jackie Bourke and Dorothy Smith share an interest in the everyday experience of 
 ### Funding
 
 These creative mapping projects are funded by awards from The Arts Council of Ireland, Engaging with Architecture Scheme
+
+
+
+![arts council funding logo](/img/arts-council-logo.png "Arts council funding logo")
