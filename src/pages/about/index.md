@@ -15,7 +15,7 @@ bios:
       Dorothy is a visual artist whose work is primarily concerned with the
       built environment of public space. Her practice is rooted in studio based
       work with a keen interest in embracing contexts beyond those of the studio
-      and gallery.
+      and gallery. Further work can be seen at dorothysmith.ie
 ---
 ### Creative urban mapping projects
 
