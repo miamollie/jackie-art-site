@@ -1,7 +1,7 @@
 ---
 templateKey: project-page
 title: Dalymount Park
-mainImage: /img/crop.jpeg
+mainImage: /img/img_0034-2.jpeg
 videoUrl: 'https://player.vimeo.com/video/418064877'
 project_pdf: /img/drawingdalymount-the-colouring-book.pdf
 gallery:
