@@ -9,8 +9,6 @@ gallery:
     alt: Vomitorium
   - image: /img/des-kelly-carpets-stand.jpg
     alt: Des Kelly Carpets Stand
-  - image: /img/drawing-book-cover_upload.jpeg
-    alt: Drawing Dalymount Cover
   - image: /img/under-connaught-street-stand.jpg
     alt: Under Connaught Street Stand
   - image: /img/cast-iron-turnstile.jpg
@@ -21,6 +19,14 @@ gallery:
     alt: 'alt '
   - image: /img/drawing-dalymount-inside-image.jpeg
     alt: Drawing Dalymount  Image
+  - image: /img/img_1350.jpeg
+    alt: Home of Irish Football
+  - image: /img/img_0034.jpeg
+    alt: wide view from terrace
+  - image: /img/img_1462.jpeg
+    alt: Jimmy's Office
+  - image: /img/img_1371.jpeg
+    alt: Stand w/ weeds
 ---
 **Dalymount Park: Mapping a Unique Architectural Space** is a collaborative mapping project developed by Jackie Bourke and Dorothy Smith. It was funded through The Arts Council of Ireland, Engaging with Architecture Scheme.
 
