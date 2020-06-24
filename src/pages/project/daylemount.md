@@ -17,16 +17,24 @@ gallery:
     alt: Tramway End
   - image: /img/dressing-room-2.jpg
     alt: 'alt '
-  - image: /img/drawing-dalymount-inside-image.jpeg
-    alt: Drawing Dalymount  Image
+  - image: /img/img_1416.jpeg
+    alt: Love Football
   - image: /img/img_1350.jpeg
     alt: Home of Irish Football
-  - image: /img/img_0034.jpeg
-    alt: wide view from terrace
   - image: /img/img_1462.jpeg
     alt: Jimmy's Office
+  - image: /img/img_0034.jpeg
+    alt: wide view from terrace
   - image: /img/img_1371.jpeg
     alt: Stand w/ weeds
+  - image: /img/img_1671.jpeg
+    alt: Ref and Assistants
+  - image: /img/img_1571.jpeg
+    alt: '''Mother'''
+  - image: /img/img_1626.jpeg
+    alt: Hearts
+  - image: /img/img_1664.jpeg
+    alt: Never Give Up
 ---
 **Dalymount Park: Mapping a Unique Architectural Space** is a collaborative mapping project developed by Jackie Bourke and Dorothy Smith. It was funded through The Arts Council of Ireland, Engaging with Architecture Scheme.
 
