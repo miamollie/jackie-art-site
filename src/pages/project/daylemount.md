@@ -5,36 +5,32 @@ mainImage: /img/img_0034-2.jpeg
 videoUrl: 'https://player.vimeo.com/video/418064877'
 project_pdf: /img/drawingdalymount-the-colouring-book.pdf
 gallery:
-  - image: /img/vomitorium.jpg
-    alt: Vomitorium
-  - image: /img/des-kelly-carpets-stand.jpg
-    alt: Des Kelly Carpets Stand
   - image: /img/under-connaught-street-stand.jpg
     alt: Under Connaught Street Stand
   - image: /img/cast-iron-turnstile.jpg
     alt: Castiron thing
-  - image: /img/tramway-end.jpg
-    alt: Tramway End
   - image: /img/dressing-room-2.jpg
     alt: 'alt '
   - image: /img/img_1416.jpeg
     alt: Love Football
+  - image: /img/tramway-end.jpg
+    alt: Tramway End
   - image: /img/img_1350.jpeg
     alt: Home of Irish Football
-  - image: /img/img_1462.jpeg
-    alt: Jimmy's Office
   - image: /img/img_0034.jpeg
     alt: wide view from terrace
   - image: /img/img_1371.jpeg
     alt: Stand w/ weeds
+  - image: /img/img_1462.jpeg
+    alt: Jimmy's Office
+  - image: /img/img_1664.jpeg
+    alt: Never Give Up
   - image: /img/img_1671.jpeg
     alt: Ref and Assistants
   - image: /img/img_1571.jpeg
     alt: '''Mother'''
   - image: /img/img_1626.jpeg
     alt: Hearts
-  - image: /img/img_1664.jpeg
-    alt: Never Give Up
 ---
 **Dalymount Park: Mapping a Unique Architectural Space** is a collaborative mapping project developed by Jackie Bourke and Dorothy Smith. It was funded through The Arts Council of Ireland, Engaging with Architecture Scheme.
 
