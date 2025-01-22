@@ -32,7 +32,7 @@ $ netlify dev # or ntl dev
 
 ### Setting up the CMS
 
-Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
+Follow the [Netlify CMS Quick Start Guide](https://www.netlifyccms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
 
 ## Debugging
 
