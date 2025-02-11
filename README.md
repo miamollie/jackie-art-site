@@ -4,7 +4,6 @@
 
 #### TODO
 - [ ] update Favicon
-- [ ] add prettier/eslint
  
 ### Access Locally
 
