@@ -13,7 +13,7 @@ export const ProjectPageTemplate = ({
   fromQuery,
   videoUrl,
 }) => (
-  <div class="content">
+  <div className="content">
     <div
       className="full-width-image-container margin-top-0"
       style={{
@@ -28,8 +28,8 @@ export const ProjectPageTemplate = ({
     </div>
     <section className="section section--gradient">
       <div className="container">
-        <div class="columns">
-          <div class="column is-half-desktop is-offset-1">
+        <div className="columns">
+          <div className="column is-half-desktop is-offset-1">
             <PreviewCompatibleContent content={content} fromQuery={fromQuery} />
           </div>
           {videoUrl ? (
@@ -39,10 +39,8 @@ export const ProjectPageTemplate = ({
                   src={videoUrl}
                   title={"TODO - video title"}
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  frameBorder="0"
                   webkitallowfullscreen="true"
                   mozallowfullscreen="true"
-                  allowFullScreenco
                   width="560"
                   height="349"
                 />
@@ -50,8 +48,8 @@ export const ProjectPageTemplate = ({
             </div>
           ) : (
             <>
-              <div class="column" />
-              <div class="column" />
+              <div className="column" />
+              <div className="column" />
             </>
           )}
         </div>
