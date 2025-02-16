@@ -37,12 +37,12 @@ export const ProjectPageTemplate = ({
               <div className="videoWrapper">
                 <iframe
                   src={videoUrl}
-                  title={"videoTitle"}
+                  title={"TODO - video title"}
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   frameBorder="0"
                   webkitallowfullscreen="true"
                   mozallowfullscreen="true"
-                  allowFullScreen
+                  allowFullScreenco
                   width="560"
                   height="349"
                 />
@@ -109,6 +109,7 @@ export const ProjectPageQuery = graphql`
         title
         videoUrl
         mainImage {
+          name
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
@@ -117,6 +118,7 @@ export const ProjectPageQuery = graphql`
         }
         gallery {
           image {
+            name
             full: childImageSharp {
               fluid(
                 maxWidth: 1024

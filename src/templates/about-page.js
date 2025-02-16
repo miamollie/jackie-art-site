@@ -9,14 +9,14 @@ export const AboutPageTemplate = ({ title, content, bios, image, fromQuery }) =>
   <>
     <div
       className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }
-      }
+      // style={{
+      //   backgroundImage: `url(${
+      //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+      //     })`,
+      //   backgroundPosition: `top left`,
+      //   backgroundAttachment: `fixed`,
+      // }
+      // }
     >
       <div
         style={{
@@ -89,16 +89,18 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         image {
+          name
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
-            }
+           }
           }
         }
         bios {
           name
           blurb
           image {
+            name
             childImageSharp {
               fluid(maxWidth: 100, quality: 100) {
                 ...GatsbyImageSharpFluid
