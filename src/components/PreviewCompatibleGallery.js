@@ -1,10 +1,7 @@
 import React from "react";
 import Gallery from "@browniebroke/gatsby-image-gallery";
-// import "@browniebroke/gatsby-image-gallery/dist/style.css";
 
 const PreviewCompatibleGallery = ({ images }) => {
-
-
   const gallery = images.map((i) => i.image.childImageSharp);
   return <Gallery className="gallery" images={gallery} />;
 

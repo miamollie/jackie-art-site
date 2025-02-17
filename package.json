@@ -50,6 +50,9 @@
   "devDependencies": {
     "prettier": "^2.0.5"
   },
+  "optionalDependencies": {
+    "@parcel/watcher-linux-x64-glibc": "^2.5.1"
+  },
   "engines": {
     "node": ">= 14.15.0"
   }
