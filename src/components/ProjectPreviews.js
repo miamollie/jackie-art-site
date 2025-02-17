@@ -77,11 +77,13 @@ export default () => (
                 templateKey
                 mainImage {
                   name
-                  #   childImageSharp {
-                  #     fluid(maxWidth: 120, quality: 100) {
-                  #       ...GatsbyImageSharpFluid
-                  #     }
-                  #   }
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 400
+                      quality: 100
+                      layout: CONSTRAINED
+                    )
+                  }
                 }
               }
             }

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import PreviewCompatibleContent from "../components/PreviewCompatibleContent";
 import Layout from "../components/Layout";
+import { getSrc } from "gatsby-plugin-image";
 
 export const IndexPageTemplate = ({
   image,
@@ -15,9 +16,7 @@ export const IndexPageTemplate = ({
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
+        backgroundImage: `url(${getSrc(image)})`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
       }}
@@ -65,7 +64,8 @@ IndexPageTemplate.propTypes = {
 };
 
 const IndexPage = ({ data }) => {
-  const { frontmatter, html } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark;
+  console.log(frontmatter);
 
   return (
     <Layout>
@@ -73,7 +73,7 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        content={html}
+        content={data.markdownRemark.html}
         fromQuery
       />
     </Layout>
@@ -98,11 +98,8 @@ export const pageQuery = graphql`
         title
         heading
         image {
-          name
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 2048, quality: 100, layout: FULL_WIDTH)
           }
         }
       }

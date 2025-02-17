@@ -4,15 +4,14 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PreviewCompatibleContent from "../components/PreviewCompatibleContent";
 import ProjectPreviews from "../components/ProjectPreviews";
+import { getSrc } from "gatsby-plugin-image";
 
 export const ProjectsPageTemplate = ({ image, title, content, fromQuery }) => (
   <div className="content">
     <div
       className="full-width-image-container margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
+        backgroundImage: `url(${getSrc(image)})`,
       }}
     >
       <h2 className="has-text-weight-bold is-size-1 title-on-image">{title}</h2>
@@ -45,7 +44,6 @@ ProjectsPageTemplate.propTypes = {
 
 const ProjectsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
   return (
     <Layout>
       <ProjectsPageTemplate
@@ -75,11 +73,8 @@ export const ProjectsPageQuery = graphql`
       frontmatter {
         title
         image {
-          name
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 2048, quality: 100, layout: FULL_WIDTH)
           }
         }
       }
