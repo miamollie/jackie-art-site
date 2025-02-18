@@ -19,16 +19,13 @@ bios:
 ---
 ### Creative urban mapping projects
 
-<!--StartFragment-->
 
 Jackie Bourke and Dorothy Smith share an interest in the everyday experience of the urban public realm. Using drawing,  mapping techniques, photography and creative writing, they develop creative mapping projects which explore the experience of public space. They work collaboratively with communities to capture that everyday experience.
 
-<!--EndFragment-->
 
 ### Funding
 
 These creative mapping projects are funded by awards from The Arts Council of Ireland, Engaging with Architecture Scheme
-
 
 
 ![arts council funding logo](/img/arts-council-logo.png "Arts council funding logo")

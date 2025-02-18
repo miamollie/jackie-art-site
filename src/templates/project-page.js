@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PreviewCompatibleContent from "../components/PreviewCompatibleContent";
 import PreviewCompatibleGallery from "../components/PreviewCompatibleGallery";
+import { getSrc } from "gatsby-plugin-image";
 
 export const ProjectPageTemplate = ({
   mainImage,
@@ -13,23 +14,19 @@ export const ProjectPageTemplate = ({
   fromQuery,
   videoUrl,
 }) => (
-  <div class="content">
+  <div className="content">
     <div
       className="full-width-image-container margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!mainImage.childImageSharp
-            ? mainImage.childImageSharp.fluid.src
-            : mainImage
-        })`,
+        backgroundImage: `url(${fromQuery ? getSrc(mainImage) : mainImage})`,
       }}
     >
       <h2 className="has-text-weight-bold is-size-1 title-on-image">{title}</h2>
     </div>
     <section className="section section--gradient">
       <div className="container">
-        <div class="columns">
-          <div class="column is-half-desktop is-offset-1">
+        <div className="columns">
+          <div className="column is-half-desktop is-offset-1">
             <PreviewCompatibleContent content={content} fromQuery={fromQuery} />
           </div>
           {videoUrl ? (
@@ -37,12 +34,10 @@ export const ProjectPageTemplate = ({
               <div className="videoWrapper">
                 <iframe
                   src={videoUrl}
-                  title={"videoTitle"}
+                  title={"TODO - video title"}
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  frameBorder="0"
                   webkitallowfullscreen="true"
                   mozallowfullscreen="true"
-                  allowFullScreen
                   width="560"
                   height="349"
                 />
@@ -50,8 +45,8 @@ export const ProjectPageTemplate = ({
             </div>
           ) : (
             <>
-              <div class="column" />
-              <div class="column" />
+              <div className="column" />
+              <div className="column" />
             </>
           )}
         </div>
@@ -60,7 +55,7 @@ export const ProjectPageTemplate = ({
     <section className="section section--gradient">
       <div className="container gallery">
         <h3>View images from the project</h3>
-        <PreviewCompatibleGallery images={gallery} />
+        <PreviewCompatibleGallery fromQuery={fromQuery} images={gallery} />
       </div>
     </section>
   </div>
@@ -109,27 +104,21 @@ export const ProjectPageQuery = graphql`
         title
         videoUrl
         mainImage {
+          name
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 2048, quality: 100, layout: FULL_WIDTH)
           }
         }
         gallery {
           image {
-            full: childImageSharp {
-              fluid(
-                maxWidth: 1024
-                quality: 85
-                srcSetBreakpoints: [576, 768, 992, 1200]
-              ) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-            thumb: childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 400, quality: 85) {
-                ...GatsbyImageSharpFluid
-              }
+            childImageSharp {
+              full: gatsbyImageData(layout: FULL_WIDTH)
+              thumb: gatsbyImageData(
+                width: 400
+                height: 400
+                quality: 100
+                placeholder: BLURRED
+              )
             }
           }
         }

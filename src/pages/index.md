@@ -6,12 +6,10 @@ heading: Mapping the everyday experience of urban public space
 ---
 ### Creative urban mapping
 
-<!--StartFragment-->
+Welcome to our website. The creative mapping projects on this site were developed by Jackie Bourke and Dorothy Smith, an urban researcher and an artist, who share an interest in the complexities of urban public space. 
 
-Welcome to our website. The creative mapping projects on this site were developed by Jackie Bourke and Dorothy Smith, an urban researcher and an artist, who share an interest in the complexities of urban public space. <!--EndFragment-->
 
 ### Recent projects
 
-<!--StartFragment-->
 
-[**Dalymount Park: Mapping a Unique Architectural Space**](/project/daylemount) is a project which focuses on an iconic football stadium in the heart of Dublin City. Originally built in 1901, Dalymount Park today is a haphazard mix of structures and details dating back across time. This project used creative mapping to explore memory and a sense of place in this unique urban stadium. [**Spatial Stories: An Exploration of Young People’s Everyday Experience of Public Space**](/project/spatial-stories), in this project a group of Dublin based teenagers used creative mapping to capture their everyday experience of public space. <!--EndFragment-->
+[**Dalymount Park: Mapping a Unique Architectural Space**](/project/daylemount) is a project which focuses on an iconic football stadium in the heart of Dublin City. Originally built in 1901, Dalymount Park today is a haphazard mix of structures and details dating back across time. This project used creative mapping to explore memory and a sense of place in this unique urban stadium. [**Spatial Stories: An Exploration of Young People’s Everyday Experience of Public Space**](/project/spatial-stories), in this project a group of Dublin based teenagers used creative mapping to capture their everyday experience of public space. 
