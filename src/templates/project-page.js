@@ -115,6 +115,7 @@ export const ProjectPageQuery = graphql`
               full: gatsbyImageData(layout: FULL_WIDTH)
               thumb: gatsbyImageData(
                 width: 400
+                height: 400
                 quality: 100
                 placeholder: BLURRED
               )

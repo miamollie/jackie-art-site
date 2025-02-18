@@ -80,6 +80,7 @@ export default () => (
                   childImageSharp {
                     gatsbyImageData(
                       width: 400
+                      height: 400
                       quality: 100
                       layout: CONSTRAINED
                     )
