@@ -18,7 +18,7 @@ export const ProjectPageTemplate = ({
     <div
       className="full-width-image-container margin-top-0"
       style={{
-        backgroundImage: `url(${getSrc(mainImage)})`,
+        backgroundImage: `url(${fromQuery ? getSrc(mainImage) : mainImage})`,
       }}
     >
       <h2 className="has-text-weight-bold is-size-1 title-on-image">{title}</h2>
@@ -55,7 +55,7 @@ export const ProjectPageTemplate = ({
     <section className="section section--gradient">
       <div className="container gallery">
         <h3>View images from the project</h3>
-        <PreviewCompatibleGallery images={gallery} />
+        <PreviewCompatibleGallery fromQuery={fromQuery} images={gallery} />
       </div>
     </section>
   </div>

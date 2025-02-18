@@ -17,7 +17,7 @@ export const AboutPageTemplate = ({
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${getSrc(image)})`,
+        backgroundImage: `url(${fromQuery ? getSrc(image) : image})`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
       }}

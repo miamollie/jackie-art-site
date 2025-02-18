@@ -11,7 +11,7 @@ export const ProjectsPageTemplate = ({ image, title, content, fromQuery }) => (
     <div
       className="full-width-image-container margin-top-0"
       style={{
-        backgroundImage: `url(${getSrc(image)})`,
+        backgroundImage: `url(${fromQuery ? getSrc(image) : image})`,
       }}
     >
       <h2 className="has-text-weight-bold is-size-1 title-on-image">{title}</h2>
