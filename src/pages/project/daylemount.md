@@ -1,8 +1,8 @@
 ---
 templateKey: project-page
-title: Dalymount Park
+title: "Dalymount Park: Mapping a Unique Architectural Space"
 mainImage: /img/img_0034-2.jpeg
-videoUrl: 'https://player.vimeo.com/video/418064877'
+videoUrl: https://player.vimeo.com/video/418064877
 project_pdf: /img/drawingdalymount-the-colouring-book.pdf
 gallery:
   - image: /img/under-connaught-street-stand.jpg
@@ -10,7 +10,7 @@ gallery:
   - image: /img/cast-iron-turnstile.jpg
     alt: Castiron thing
   - image: /img/dressing-room-2.jpg
-    alt: 'alt '
+    alt: "alt "
   - image: /img/img_1416.jpeg
     alt: Love Football
   - image: /img/tramway-end.jpg
@@ -28,9 +28,9 @@ gallery:
   - image: /img/img_1671.jpeg
     alt: Ref and Assistants
   - image: /img/img_1571.jpeg
-    alt: '''Mother'''
+    alt: "'Mother'"
   - image: /img/img_1626.jpeg
-    alt: ' '
+    alt: " "
 ---
 **Dalymount Park: Mapping a Unique Architectural Space** is a collaborative mapping project developed by Jackie Bourke and Dorothy Smith. It was funded through The Arts Council of Ireland, Engaging with Architecture Scheme.
 
